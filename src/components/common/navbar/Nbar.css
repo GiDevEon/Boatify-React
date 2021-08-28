@@ -1,0 +1,39 @@
+.bg-primary {
+    background-color: #1d4b68 !important;
+}
+
+.navbar {
+    height: 100px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.navbar-brand img {
+    width: 220px;
+    margin: 20px 20px 20px 20px;
+}
+
+.rounded-pill {
+    height: 50px;
+}
+
+.mx-auto {
+    width: 350px;
+    margin-right: 400px;
+}
+
+.ms-n5 {
+    height: 40px;
+    margin-left: -45px;
+    margin-top: 5px;
+}
+
+.signin {
+    margin: 20px 80px 20px 20px;
+}
+
+.language {
+    margin: 20px 20px 20px 20px;
+}

@@ -1,10 +1,12 @@
-import './App.css';
-import Header from './components/common/header/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Nbar from './components/common/navbar/Nbar';
+import Landing from './components/landing/Landing';
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Nbar />
+      <Landing />
     </div>
   );
 }
