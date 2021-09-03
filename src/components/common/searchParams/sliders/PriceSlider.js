@@ -1,22 +1,24 @@
+// eslint-disable-next-line
+
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
-import '../SearchParams.css';
+import './RangeSlider.css';
 
 
-    const useStyles = makeStyles({
-        root: {
-        width: 300,
-        },
-    });
+    // const useStyles = makeStyles({
+    //     root: {
+    //     width: 300,
+    //     },
+    // });
 
     function valuetext(value) {
-        return `${value}Length`;
-    }
+        return `${value}Price`;
+    };
 
-    export default function LengthSlider() {
-        const classes = useStyles();
+export default function PriceSlider() {
+        // const classes = useStyles();
         const [value, setValue] = React.useState([100, 10000000]);
 
         const handleChange = (event, newValue) => {
@@ -26,7 +28,7 @@ import '../SearchParams.css';
         return (
         <div className="slider">
             <Typography id="range-slider" gutterBottom>
-            Length ft/m
+            Price
             </Typography>
             <Slider
             value={value}
@@ -34,10 +36,20 @@ import '../SearchParams.css';
             valueLabelDisplay="auto"
             aria-labelledby="range-slider"
             getAriaValueText={valuetext}
+            step={1}
+            marks
+            track="inverted"
+            min={1800}
+            max={2030}
             />
         </div>
         );
-    }
+    };
+
+    // export function Hook () {
+    //     const classes = useStyles();
+    //     return <Slider className={classes.root}>Hook</Slider>;
+    // }
 
 
 

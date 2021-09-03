@@ -1,8 +1,10 @@
+// eslint-disable-next-line
+
 import React from 'react';
 // import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Slider from '@material-ui/core/Slider';
-import '../SearchParams.css';
+import './RangeSlider.css';
 
 
     // const useStyles = makeStyles({
@@ -13,7 +15,7 @@ import '../SearchParams.css';
 
     function valuetext(value) {
         return `${value}Year`;
-    }
+    };
 
 export default function YearSlider() {
         // const classes = useStyles();
@@ -26,7 +28,7 @@ export default function YearSlider() {
         return (
         <div className="slider">
             <Typography id="range-slider" gutterBottom>
-            Year(from/to)
+            Year
             </Typography>
             <Slider
             value={value}
@@ -36,14 +38,10 @@ export default function YearSlider() {
             getAriaValueText={valuetext}
             step={1}
             marks
+            track="inverted"
             min={1800}
             max={2030}
             />
         </div>
         );
-    }
-
-    // export default function Hook () {
-    //     const classes = useStyles();
-    //     return <Button className={classes.root}>Hook</Button>;
-    // }
+    };

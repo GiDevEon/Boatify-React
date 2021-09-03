@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  max-width: 100%;
+}
+
+#backframe {
+  background-image: url("./images/backgroundtwo.jpg");
+  height: 100%;
+  max-width: 100%;
+  margin:0;
+  padding:0;
 }
 
 .App-logo {

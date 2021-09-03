@@ -1,24 +1,97 @@
-.searchParam {
-    width: 200px;
-    height: 400px;
-    margin-left: 50px;
-    margin-top: 50px;
-    background: black;
-    opacity: 0.6;
-    display: flex;
-    flex-direction: column;
-align-items: center;
-justify-content: center;
+.btn-primary {
+    background-color: #1d4b68 !important;
 }
 
-.sliderCont {
-    height: 25px;
-    width: 180px;
-    flex-direction: row;
-    justify-content: center;
+#parafield {
+    width: 300px;
+    height: 370px;
+    padding: 0;
+    background-color: rgba(250, 250, 250, 0.705);
 }
 
-.slider {
-    width: 130px;
+#propbtn {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#vactypebtn {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+
+#boattypebtn {
+    margin-top: 15px;
+}
+
+#sliders {
+    margin-left: 45px;
+    padding:0;
+}
+
+#slider {
+    height: 40px;
+    padding:0;
     margin-top: 10px;
+}
+
+#bottombuttonparent {
+    margin-bottom: 15px;
+}
+
+#btncont {
+    padding: 0;
+}
+
+#resetbtn {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+#searchbtn {
+    margin-top: 15px; 
+}
+
+#advbtn {
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.dropdown-menu {
+	min-width: 200px;
+} 
+
+.dropdown-menu.columns-2 {
+	min-width: 400px;
+}
+.dropdown-menu.columns-3 {
+	min-width: 600px;
+}
+.dropdown-menu li a {
+	padding: 5px 15px;
+	font-weight: 300;
+}
+.multi-column-dropdown {
+	list-style: none;
+    margin: 0px;
+    padding: 0px;
+    }
+.multi-column-dropdown li a {
+    display: block;
+    clear: both;
+    line-height: 1.428571429;
+    color: #333;
+    white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+    text-decoration: none;
+    color: #262626;
+    background-color: #999;
+}
+
+@media (max-width: 767px) {
+    .dropdown-menu.multi-column {
+        min-width: 240px !important;
+        overflow-x: hidden;
+    }
 }

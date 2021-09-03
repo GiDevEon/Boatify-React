@@ -1,0 +1,71 @@
+
+#boatCarousel {
+    width: 90%;
+}
+
+#keyData {
+    /* width: 500px; */
+    border-radius: 25px;
+    margin: 20px 20px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.733);
+}
+
+#location {
+    width: 500px;
+    height: 60px;
+    border-radius: 25px;
+    margin: 20px 20px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.733);
+    position: relative;
+}
+
+.header {
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+#location p {
+    font-size: 15px;
+    margin: 2px;
+    font-weight: 400;
+}
+
+
+#mapimg img {
+    width: 50px;
+    margin-left: 350px;
+    position: absolute;
+}
+
+#description {
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+    margin: 20px 20px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.733);
+    overflow-y: auto;
+}
+
+#services {
+    width: 500px;
+    height: 250px;
+    border-radius: 25px;
+    margin: 20px 20px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.733);
+}
+
+#sellerData {
+    width: 300px;
+    height: 700px;
+    border-radius: 25px;
+    margin: 20px 20px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.733);
+}
+
+#listingStats {
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    margin: 20px 20px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.733);
+}

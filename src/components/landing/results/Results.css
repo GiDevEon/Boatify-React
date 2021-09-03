@@ -1,0 +1,84 @@
+.landingpreviewcont {
+    width:960 px; 
+    margin:50 px auto;
+    height:300px;
+    border:1 solid #666 ;
+    overflow:hidden;
+}
+
+
+/* Single */
+.single {
+    width: 250px;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.resultItem img {
+    border-radius: 25px;
+    min-height: 250px;
+    object-fit: cover;
+    margin-left: 40p;
+    
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 30%; /* Full height (cover the whole page) */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+.previewdata {
+    font-size: 13px;
+    text-align: start;
+    padding-left: 10px;
+    margin: 0;
+    margin-top: 3px;
+    color:bisque
+}
+
+.pricepreview {
+    font-size: 13px;
+    text-align: end;
+    padding-right: 10px;
+    margin: 0;
+    margin-top: 3px;
+    color:bisque
+}
+
+.leftResult {
+    margin: 0 0 60px -80px;
+
+}
+
+.result {
+    margin: 0 0 30px 30px;
+}
+
+.rightResult {
+    margin: 0 80px 30px 30px;
+}
+
+
+/* RESULTCONT */
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

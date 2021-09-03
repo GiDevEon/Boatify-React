@@ -1,4 +1,6 @@
-// custom scss
-$primary:       #099bdb;
+$theme-colors: (
+    "primary": #1d4b68,
+);
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+/* finally, import Bootstrap */
+@import '../node_modules/bootstrap/scss/bootstrap';

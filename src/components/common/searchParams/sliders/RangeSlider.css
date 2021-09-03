@@ -3,6 +3,11 @@
     width: 200px;
 }
 
+#range-slider {
+    padding: 0;
+    margin-bottom: 0;
+}
+
 .slider__track,
 .slider__range {
     border-radius: 3px;

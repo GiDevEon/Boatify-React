@@ -1,25 +1,28 @@
-.container {
-    /* background-image: url('./../../images/background.jpg');
-    background-size: cover;
-    height: 3100px;
-    background-position: center;
-    background-repeat: no-repeat; */
+#parentrow {
+    border-radius: 25px;
+    margin: 40px 40px;
+    background-color: rgba(25, 25, 25, 0.5);
+    
 }
 
-#jumboBack {
-    background-color: black;
-    opacity: 0.6;
+#para {
+    width: 300px;
+    height: 430px;
+    padding: 0;
+    margin: 40px 10px 10px -50px;
 }
 
-#aqua {
-    background-color: aquamarine;
-}
-#red {
-    background-color: red;
-}
-#blue {
-    background-color: blue;
-}
-#yellow {
-    background-color: yellow;
+#carousel {
+    padding: 0;
+    width: 800px;
+    margin: 30px 180px 10px 10px;
+} 
+
+#results {
+    border: 0;
+    padding: 0;
+    margin: 60px 20px 20px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }

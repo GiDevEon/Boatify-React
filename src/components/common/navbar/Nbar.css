@@ -1,13 +1,7 @@
-.bg-primary {
-    background-color: #1d4b68 !important;
-}
-
-.navbar {
+#navbar {
+    background-color: #1d4b68!important;
     height: 100px;
-}
-
-.nav-link {
-    color: white !important;
+    max-width: 100%;
 }
 
 .navbar-brand img {
@@ -15,13 +9,27 @@
     margin: 20px 20px 20px 20px;
 }
 
-.rounded-pill {
-    height: 50px;
+.mx-auto {
+    max-width: 350px;
+    
 }
 
-.mx-auto {
-    width: 350px;
-    margin-right: 400px;
+#navbarSupportedContent {
+    margin-left: 220px;
+    padding-left: 30px;
+    
+}
+
+.nav-item {
+    margin-right: 20px
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.rounded-pill {
+    height: 50px;
 }
 
 .ms-n5 {
@@ -30,10 +38,7 @@
     margin-top: 5px;
 }
 
-.signin {
-    margin: 20px 80px 20px 20px;
-}
-
-.language {
+#dropdown-basic-button {
     margin: 20px 20px 20px 20px;
+    background-color: #ff0b73!important;
 }

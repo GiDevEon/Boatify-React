@@ -1,0 +1,19 @@
+#parentrow {
+    padding: 0;
+}
+
+/* #box {
+    padding: 0;
+    width: 100%;
+} */
+
+#carousel {
+
+
+}
+
+.carousel-item img {
+    height: 400px;
+    border-radius: 25px;
+    object-fit: cover;
+}
