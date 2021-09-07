@@ -4,6 +4,10 @@
     max-width: 100%;
 }
 
+.subtext {
+    
+}
+
 .navbar-brand img {
     width: 220px;
     margin: 20px 20px 20px 20px;
@@ -40,5 +44,5 @@
 
 #dropdown-basic-button {
     margin: 20px 20px 20px 20px;
-    background-color: #ff0b73!important;
+    background-color: #ff5576!important;
 }

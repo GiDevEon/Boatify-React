@@ -1,8 +1,16 @@
-#parentrow {
+#frameBoatID {
+    width: 860px;
+    margin: 50px auto;
+    padding: 0;
+    border-radius: 25px;
+    background-color: rgba(25, 25, 25, 0.5);
+    
+}
+
+#frameLanding {
     border-radius: 25px;
     margin: 40px 40px;
     background-color: rgba(25, 25, 25, 0.5);
-    
 }
 
 #para {
@@ -25,4 +33,24 @@
     display: grid;
     justify-content: center;
     align-content: center;
+}
+
+
+#frameLogin {
+    border-radius: 25px;
+    margin: 40px 40px;
+    background-color: rgba(25, 25, 25, 0.5);
+}
+
+#login {
+    width: 768px;
+    height: 480px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+#frameU1k {
+    border-radius: 25px;
+    margin: 40px 40px;
+    background-color: rgba(25, 25, 25, 0.5);
 }

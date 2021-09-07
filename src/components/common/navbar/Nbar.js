@@ -12,22 +12,25 @@ export default function Nbar() {
         
         <nav class="navbar navbar-expand-lg navbar-light bg-primary" id="navbar">
             <div class="container-fluid">
-                <NavLink class="navbar-brand" to="/"><img src={logo_small} alt=""/></NavLink>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div className="col-3">
+                    <NavLink class="navbar-brand" to="/"><img src={logo_small} alt=""/></NavLink>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    {/* <p className="subtext">redefining the search for freedom</p> */}
+                </div>
 
-                <div class="col-md-5 mx-auto">
-                        <div class="input-group">
-                            <input class="form-control border-end-0 border rounded-pill" type="search" value="What boat are you longing for?" id="example-search-input"/>
-                            <span class="input-group-append">
-                                <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5" type="button">
-                                    <img src={search} alt="searchlogo" />
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                        </div>
+                <div class="col-4-md-5 mx-auto">
+                    <div class="input-group">
+                        <input class="form-control border-end-0 border rounded-pill" type="search" value="What boat are you longing for?" id="example-search-input"/>
+                        <span class="input-group-append">
+                            <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5" type="button">
+                                <img src={search} alt="searchlogo" />
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
                     </div>
+                </div>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -35,22 +38,22 @@ export default function Nbar() {
                             <NavLink class="nav-link active" aria-current="page" to="/sell">Sell</NavLink>
                         </li>
                         <li class="nav-item">
-                            <NavLink class="nav-link active" aria-current="page" to="/bookmarks">Bookmarks</NavLink>
+                            <NavLink class="nav-link active" aria-current="page" to="/favorites">Favorites</NavLink>
                         </li>
                         <li class="nav-item">
-                            <NavLink class="nav-link active" aria-current="page" Route path="/Underonek">Boats u/1k</NavLink>
+                            <NavLink class="nav-link active" aria-current="page" to="/Underonek">Boats u/1k</NavLink>
                         </li>
                         <li class="nav-item">
-                            <NavLink class="nav-link active" aria-current="page" to={{pathname: "https://stolenboats.info/"}}>Stolen Boats</NavLink>
+                            <NavLink class="nav-link active" aria-current="page" to="/stolen">Stolen Boats</NavLink>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                                 Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <NavLink class="dropdown-item" to="/">Action</NavLink>
-                                <NavLink class="dropdown-item" to="/">Another action</NavLink>
-                                <NavLink class="dropdown-item" to="/">Something else here</NavLink>
+                                <NavLink class="dropdown-item" to="/">Boat overpass portal</NavLink>
+                                <NavLink class="dropdown-item" to="/">C2C inspect</NavLink>
+                                <NavLink class="dropdown-item" to="/">Shared Ownerships</NavLink>
                             </ul>
                         </li>
                         <li class="nav-item">

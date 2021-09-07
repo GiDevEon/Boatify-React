@@ -1,30 +1,45 @@
+#frameBoatID {
+    margin: 20px;
+    border-radius: 25px;
+    background-color: rgba(25, 25, 25, 0.5);
+}
+
 
 #boatCarousel {
     width: 90%;
 }
 
 #keyData {
-    /* width: 500px; */
     border-radius: 25px;
-    margin: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    margin: 30px 15px 15px 30px;
+    padding: 20px;
     background-color: rgba(255, 255, 255, 0.733);
 }
 
+
 #location {
-    width: 500px;
+    display: flex;
+    justify-content: center;
     height: 60px;
+    margin: 30px 15px 15px 30px;
+    padding: 20px;
     border-radius: 25px;
-    margin: 20px 20px 20px 20px;
     background-color: rgba(255, 255, 255, 0.733);
     position: relative;
 }
 
 .header {
+    display: flex;
+    justify-content: center;
     font-weight: 500;
     margin-bottom: 2px;
 }
 
 #location p {
+    margin: 20px;
+    padding: 5px;
     font-size: 15px;
     margin: 2px;
     font-weight: 400;
@@ -38,34 +53,41 @@
 }
 
 #description {
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px 15px 15px 30px;
     height: 300px;
     border-radius: 25px;
-    margin: 20px 20px 20px 20px;
     background-color: rgba(255, 255, 255, 0.733);
     overflow-y: auto;
 }
 
 #services {
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px 15px 30px 30px;
     height: 250px;
     border-radius: 25px;
-    margin: 20px 20px 20px 20px;
     background-color: rgba(255, 255, 255, 0.733);
 }
 
 #sellerData {
-    width: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 30px 30px 30px 15px;
     height: 700px;
     border-radius: 25px;
-    margin: 20px 20px 20px 20px;
-    background-color: rgba(255, 255, 255, 0.733);
 }
 
 #listingStats {
-    width: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 15px 30px 30px 15px;
     height: 300px;
     border-radius: 25px;
-    margin: 20px 20px 20px 20px;
     background-color: rgba(255, 255, 255, 0.733);
 }

@@ -9,10 +9,10 @@ import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 import './SearchParams.css';
-
-
+import  { data } from '../../../boatData.json'
 
 function SearchParams() {
+
     const [state, setState] = React.useState({
         checkedA: true,
         checkedB: true,

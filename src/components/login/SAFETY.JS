@@ -1,14 +1,14 @@
-/*Secured code here before I went on to refactor in key elements you used on the blog*/
-
 import React from 'react';
-import './LoginForm.css';
+import './LogIn.css';
 import { useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import { Redirect, useLocation } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Spinner from 'react-bootstrap/Spinner';
-import { AuthContext } from '../context/AuthContext';
+import Form from 'react-bootstrap/Form';
+import Alert from 'react-bootstrap/Alert';
+import { AuthContext } from '../../context/AuthContext';
 
 const LogIn = () => {
 const location = useLocation();
@@ -40,34 +40,27 @@ const onSubmit = async data => await signIn(data);
             <Row>
                 <div class="container" id="container">
                     <div class="form-container sign-up-container">
-                        <form action="#">
-                            <h1>Create Account</h1>
-                            <div class="social-container">
-                                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <span>or use your email for registration</span>
-                            <input type="text" placeholder="Name" />
-                            <input type="email" placeholder="Email" />
-                            <input type="password" placeholder="Password" />
-                            <button>Sign Up</button>
-                        </form>
+                        <Form.Group action="#">
+                            <Form.Label>Create Account</Form.Label>
+                            <Form.Control class="signup-container" controlId='email'>
+                                <input type="text" placeholder="Name" />
+                                <input type="email" placeholder="Email" />
+                                <input type="password" placeholder="Password" />
+                                <button>Sign Up</button>
+                                {errors.email && <Alert variant='danger'>{errors.email.message}</Alert>}
+                            </Form.Control>
+                        </Form.Group>
                     </div>
                     <div class="form-container sign-in-container">
-                        <form action="#">
-                            <h1>Sign in</h1>
-                            <div class="social-container">
-                                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
-                            <span>or use your account</span>
-                            <input type="email" placeholder="Email" />
-                            <input type="password" placeholder="Password" />
-                            <a href="#">Forgot your password?</a>
-                            <button>Sign In</button>
-                        </form>
+                        <Form.Group action="#">
+                            <Form.Label>Sign in</Form.Label>
+                            <Form.Control class="login-container" controlId='email'>
+                                <input type="email" placeholder="Email" />
+                                <input type="password" placeholder="Password" />
+                                <a href="#">Forgot your password?</a>
+                                <button>Sign In</button>
+                            </Form.Control>
+                        </Form.Group>
                     </div>
                     <div class="overlay-container">
                         <div class="overlay">

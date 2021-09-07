@@ -7,14 +7,16 @@ import ResultsCont from './results/ResultsCont'
 import './Landing.css'
 import LogIn from '../login/LogIn'
 import Underonek from '../under1k/underonek'
+import Filter from '../common/searchParams/filter/filter'
 
 export default function Landing() {
     return (
-        <div className="row" id="parentrow">
+        <div className="row">
             <div className="col">
                 <Switch>
+                    {/* <Filter /> */}
                     <Route  exact path='/boat/:id'>
-                    <div className="row" >
+                    <div className="row">
                         <div className="col-11">
                             <BoatID />
                         </div>
@@ -22,7 +24,7 @@ export default function Landing() {
                     </Route>
 
                     <Route  exact path='/'>
-                    <div className="row">
+                    <div className="row" id="frameLanding">
                         <div className="col" id="para">
                             <SearchParams />
                         </div>
@@ -38,15 +40,21 @@ export default function Landing() {
                     </Route>
 
                     <Route exact path='/LogIn/'>
-                        <div className="col">
+                    <div className="row" id="frameLogin">
+                        <div className="col-4"></div>
+                        <div className="col-4" id="login">
                             <LogIn />
                         </div>
+                        <div className="col-4"></div>
+                    </div>
                     </Route>
 
                     <Route exact path='/Underonek'>
-                        <div className="col">
+                    <div className="row" id="frameU1k">
+                        <div className="col-4">
                             <Underonek />
                         </div>
+                    </div>
                     </Route>
                 </Switch>
             </div>
